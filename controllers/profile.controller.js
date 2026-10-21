@@ -112,6 +112,7 @@ const updatePersonalProfile = async (req, res) => {
       data: profile,
     });
   } catch (error) {
+    
     console.error('Update personal profile error:', error);
     return res.status(500).json({
       success: false,
